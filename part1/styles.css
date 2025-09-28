@@ -1,0 +1,86 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+   background: linear-gradient(to right, #fff0f5, #cabee7);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #995fe0;
+  padding: 15px 30px;
+  color: white;
+}
+
+.MyLogo {
+    padding: 0px 10px;
+}
+
+.logo {
+  height: 30px;         
+  vertical-align: middle;
+  padding: 6px;
+  border-radius: 20px;
+
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  background: white;
+  color: #995fe0;
+}
+
+.card-row {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: 0.3s;
+}
+
+.card-photo {
+  max-width: 250px;
+  margin: auto;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+}
+
+.card-button {
+  padding: 8px 12px;
+  background: #995fe0;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.card-button:hover {
+  background: #5b3c9f;
+}

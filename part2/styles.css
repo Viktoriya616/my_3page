@@ -1,0 +1,127 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fff0f5, #cabee7);
+  color: #333;
+}
+
+.layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap: 20px;
+  padding: 0 20px 20px 20px;
+  align-items: stretch;
+}
+
+
+header {
+  grid-area: header;
+  background: #995fe0;
+  color: white;
+  padding: 20px;
+  font-size: 1.5em;
+  text-align: center;         
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin: 0 -20px;    
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #dacdff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar h3 {
+  margin-top: 26px;
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #2314ad;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #5b3c9f;
+}
+
+.main {
+  grid-area: main;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+footer {
+  grid-area: footer;
+  background: #995fe0;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.gallery-title {
+  text-align: center;
+  color: #995fe0;
+  margin: 0 0 25px 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;
+  padding: 0 20px 30px 20px;
+}
+
+.gallery figure {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  background: white;
+}
+
+.gallery img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery figcaption {
+  position: absolute;
+  bottom: 0;
+  left: 0; right: 0;
+  background: #995fe0be;
+  color: white;
+  padding: 10px;
+  opacity: 0;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.gallery figure:hover figcaption {
+  opacity: 1;
+}
